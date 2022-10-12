@@ -14,7 +14,7 @@
             "email": "mey09.nin@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "guzzlehttp/guzzle": "^7.0.1",
         "nullpunkt/lz-string-php": "^1.3"
