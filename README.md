@@ -71,5 +71,3 @@ var_dump($peserta->getByNoKartu('123456789','2018-09-16'));
 - Pcare v3.0: https://new-api.bpjs-kesehatan.go.id/pcare-rest-v3.0/
 
 #### BASED ON & CREDIT THANKS 👍
-
-https://github.com/nsulistiyawan/bpjs
