@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 
+ * VCLAIM
  */
 $vclaim_config = [
     'cons_id'       => '123456',
@@ -11,7 +11,9 @@ $vclaim_config = [
     'service_name'  => 'vclaim-rest-dev'
 ];
 
-//aplicaresws
+/**
+ * APLI CARE
+ */
 $aplicare_config = [
     'cons_id'      => '',
     'secret_key'   => '',
@@ -19,8 +21,9 @@ $aplicare_config = [
     'service_name' => 'aplicaresws/rest'
 ];
 
-
-//pcare
+/**
+ * P-CARE
+ */
 $pcare_config = [
     'cons_id'      => '',
     'secret_key'   => '',

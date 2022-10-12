@@ -1,16 +1,46 @@
-BPJS Kesehatan Indonesia
-PHP package to access BPJS Kesehatan API This package is a wrapper of BPJS VClaim Web Service V2
+# BPJS Kesehatan Indonesia
+PHP package to access BPJS Kesehatan API 
+This package is a wrapper of BPJS VClaim Web Service V2
 
-Installation 🔥
-composer require bridging/bpjs
+#### Installation :fire:
 
-Example Usage :
+`composer require bridging/bpjs`
+
+#### Example Usage :
+```php
 //use your own bpjs config
-$vclaim_conf = [
-    'cons_id' => '123456',
-    'secret_key' => '123456',
-    'base_url' => 'https://dvlp.bpjs-kesehatan.go.id',
-    'service_name' => 'vclaim-rest'
+/**
+ * VCLAIM
+ */
+$vclaim_config = [
+    'cons_id'       => '123456',
+    'secret_key'    => 'abcdef',
+    'user_key'      => 'xxxyyyzzz',
+    'base_url'      => 'https://apijkn-dev.bpjs-kesehatan.go.id',
+    'service_name'  => 'vclaim-rest-dev'
+];
+
+/**
+ * APLI CARE
+ */
+$aplicare_config = [
+    'cons_id'      => '',
+    'secret_key'   => '',
+    'base_url'     => 'https://new-api.bpjs-kesehatan.go.id:8080',
+    'service_name' => 'aplicaresws/rest'
+];
+
+/**
+ * P-CARE
+ */
+$pcare_config = [
+    'cons_id'      => '',
+    'secret_key'   => '',
+    'base_url'     => 'https://dvlp.bpjs-kesehatan.go.id:9081',
+    'service_name' => 'pcare-rest-v3.0',
+    'pcare_user'   => '',
+    'pcare_pass'   => '',
+    'kd_aplikasi'  => ''
 ];
 
 // use Referensi service
@@ -19,18 +49,27 @@ var_dump($referensi->diagnosa('A00'));
 
 $peserta = new Bridging\Bpjs\VClaim\Peserta($vclaim_conf);
 var_dump($peserta->getByNoKartu('123456789','2018-09-16'));
-Supported Services (WIP) 🚀
- Referensi
- Peserta
- SEP
- Rujukan
- Lembar Pengajuan Klaim
- Monitoring
- PRB
- Rencana Kontrol
- Aplicare
-REFERENSI REST 📘
-Vclaim V2.0 Trust Mark: https://dvlp.bpjs-kesehatan.go.id:8888/trust-mark/portal.html
-Pcare v3.0: https://new-api.bpjs-kesehatan.go.id/pcare-rest-v3.0/
-BASED ON & CREDIT THANKS 👍
+```
+
+
+#### Supported Services (WIP) :rocket:
+
+- [x] Referensi
+- [x] Peserta
+- [x] SEP
+- [x] Rujukan
+- [x] Lembar Pengajuan Klaim
+- [x] Monitoring
+- [x] PRB
+- [x] Rencana Kontrol
+- [x] Aplicare
+
+
+####  REFERENSI REST 📘
+
+- Vclaim V2.0 Trust Mark: https://dvlp.bpjs-kesehatan.go.id:8888/trust-mark/portal.html
+- Pcare v3.0: https://new-api.bpjs-kesehatan.go.id/pcare-rest-v3.0/
+
+#### BASED ON & CREDIT THANKS 👍
+
 https://github.com/nsulistiyawan/bpjs
