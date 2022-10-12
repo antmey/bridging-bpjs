@@ -1,0 +1,22 @@
+{
+    "name": "bridging/bpjs",
+    "description": "Wrapper for Bridging - BPJS VClaim v2, Pcare, Aplicare, Siranap",
+    "type": "package",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Bridging\\Bpjs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Meninjar Mulyono",
+            "email": "mey09.nin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1",
+        "nullpunkt/lz-string-php": "^1.3"
+    }
+}
