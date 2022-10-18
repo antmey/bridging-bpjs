@@ -16,7 +16,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "guzzlehttp/guzzle": "^7.0.1",
+        "guzzlehttp/guzzle": "~6.0",
         "nullpunkt/lz-string-php": "^1.3"
     }
 }
