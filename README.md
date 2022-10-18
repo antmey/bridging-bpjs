@@ -73,6 +73,7 @@ var_dump($peserta->getByNoKartu('123456789','2018-09-16'));
 - [x] PRB
 - [x] Rencana Kontrol
 - [x] Aplicare
+- [x] SITB ( Sietem Informasi Tuberkolosis )
 
 
 ####  REFERENSI REST 📘
