@@ -43,6 +43,16 @@ $pcare_config = [
     'kd_aplikasi'  => ''
 ];
 
+/**
+ * SITB_CONF
+*/
+$sitb_conf = [
+        'cons_id'       => '',
+        'user_pass'      => '',
+        'base_url'      => 'http://sirs.yankes.kemkes.go.id',
+        'service_name'  => 'sirsservice/sitbtraining/sitb'
+    ];
+
 // use Referensi service
 $referensi = new Bridging\Bpjs\VClaim\Referensi($vclaim_conf);
 var_dump($referensi->diagnosa('A00'));
@@ -71,5 +81,3 @@ var_dump($peserta->getByNoKartu('123456789','2018-09-16'));
 - Pcare v3.0: https://new-api.bpjs-kesehatan.go.id/pcare-rest-v3.0/
 
 #### BASED ON & CREDIT THANKS 👍
--
-- https://github.com/nsulistiyawan/bpjs
